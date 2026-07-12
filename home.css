@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+* {
+    --primary: #d81212;
+    --highlight: #f81515;
+    --shadow: #b80f0f;
+    --secondary: #950000;
+    --highlight2: #b30101;
+    --shadow2: #680000;
+    --text-secondary: #c60000;
+    --accent: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--primary);
+    height: 4.5rem;
+    width: 100vw;
+}
+
+.logo-wrapper {
+    color: var(--accent);
+    font-family: "Agbalumo", system-ui;
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    margin-left: 3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: larger;
+    transition: ease 0.5s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 0.1rem;
+    color: var(--secondary);
+}
+
+.btns {    
+    display: flex;
+    justify-content: space-between;
+    margin-left: 33rem;
+    gap: 3rem;
+}
+
+.btn-info {
+    height: 2.5rem;
+    width: 7rem;
+    border-radius: 35rem;
+    border-width: 0.2rem;
+    border: solid;
+    border-color: var(--secondary);
+    background-color: var(--accent);
+    color: var(--secondary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btn-call {
+    height: 2.5rem;
+    width: 7rem;
+    border-radius: 35rem;
+    border-width: 0rem;
+    background: var(--primary);
+    color: var(--accent);
+    box-shadow: 5px 5px 10px var(--shadow),
+    -5px -5px 10px var(--highlight);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32rem;
+    background-color: var(--secondary);
+}
+
+.tag-box {
+    margin-top: 1rem;
+}
+
+.tag-box h1 {
+    color: var(--text-secondary);
+    font-size: 7rem;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: -3px;
+}
+
+.key-point {
+    line-height: 110px;
+    font-family:"Agbalumo", system-ui;
+    font-size: 10rem;
+    color: var(--secondary);
+    text-shadow: 6px 6px 12px var(--shadow2),
+    -6px -6px 12px var(--highlight2);
+}
+
+.tag-box p {
+    margin-top: -4rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+}
